@@ -1,6 +1,6 @@
 cask "highlight" do
-  version "1.5.0"
-  sha256 "94b5fae74affb57503d28c790d6a24b6eec862b855876d64a96d4888d1caa275"
+  version "1.6.0"
+  sha256 "bc4ce73c29a01e5380a6f4fc40718747a6b4b7926000360e08cfad267da45e99"
 
   url "https://github.com/tdimeco/highlight/releases/download/v#{version}/highlight-#{version}.zip"
   name "Highlight"
@@ -8,7 +8,7 @@ cask "highlight" do
   homepage "https://github.com/tdimeco/highlight"
 
   auto_updates true
-  depends_on macos: ">= :big_sur"
+  depends_on macos: ">= :monterey"
 
   app "Highlight.app"
 
