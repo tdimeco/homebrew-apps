@@ -7,7 +7,7 @@ cask "quicksound" do
   desc "Quickly play sounds from the macOS status bar"
   homepage "https://github.com/tdimeco/quicksound"
 
-  depends_on macos: ">= :monterey"
+  depends_on macos: :monterey
 
   app "QuickSound.app"
 

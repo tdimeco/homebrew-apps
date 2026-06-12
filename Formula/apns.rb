@@ -8,8 +8,11 @@ class Apns < Formula
   head "https://github.com/tdimeco/apns.git", branch: "main"
 
   depends_on :macos
-  depends_on macos: :ventura
-  depends_on xcode: ["15.4", :build]
+
+  on_macos do
+    depends_on macos: :ventura
+    depends_on xcode: ["15.4", :build]
+  end
 
   def install
     system "make", "build-homebrew"

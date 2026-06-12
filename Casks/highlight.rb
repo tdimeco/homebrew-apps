@@ -8,7 +8,7 @@ cask "highlight" do
   homepage "https://github.com/tdimeco/highlight"
 
   auto_updates true
-  depends_on macos: ">= :monterey"
+  depends_on macos: :monterey
 
   app "Highlight.app"
 
