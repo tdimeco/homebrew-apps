@@ -3,15 +3,15 @@ class Apns < Formula
   homepage "https://github.com/tdimeco/apns"
   license "MIT"
   url "https://github.com/tdimeco/apns.git",
-      tag:      "1.0.1",
-      revision: "a9d20130dd07182c9f357f53b9f06f262b67acaa"
+      tag:      "1.0.2",
+      revision: "61369cab776235258e4860bd99b98f62a712d786"
   head "https://github.com/tdimeco/apns.git", branch: "main"
 
   depends_on :macos
 
   on_macos do
-    depends_on macos: :ventura
-    depends_on xcode: ["15.4", :build]
+    depends_on macos: :sonoma
+    depends_on xcode: ["27.0", :build]
   end
 
   def install
