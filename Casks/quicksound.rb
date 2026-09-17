@@ -1,13 +1,13 @@
 cask "quicksound" do
-  version "1.8"
-  sha256 "9b80b6bf3c08fd1e73b06ecadc73cbcc4d9c2f769e302077f9a454b7f8ceb5aa"
+  version "1.9"
+  sha256 "4a3a61bac7da3021e9dc11c48dabfd95a329cfd2f47dabaf953773625f9eef5e"
 
   url "https://github.com/tdimeco/quicksound/releases/download/#{version}/quicksound-#{version}.zip"
   name "QuickSound"
   desc "Quickly play sounds from the macOS status bar"
   homepage "https://github.com/tdimeco/quicksound"
 
-  depends_on macos: :monterey
+  depends_on macos: :sonoma
 
   app "QuickSound.app"
 
